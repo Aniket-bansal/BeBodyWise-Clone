@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #category{
+            width: 70%; 
+            margin: auto;
+            display: grid;   
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+        }
+
+        button{
+              padding: 10px;
+              font-size: medium;
+              border-radius: 5px;
+              border: none;
+              cursor: pointer;
+        }
+
+        #hair{
+            color: white;
+            background-color: #66509a;
+        }
+
+        #skin{
+            color: #6777b0;
+            background-color: #e8f4ff;
+        }
+
+        #weight{
+            color: #1385a3;
+            background-color: #eaf3f2;
+        }
+
+        #pcos{
+            color: #eb7371;
+            background-color: #fdeff0;
+        }
+
+        #feminine{
+            color: #91b3cf;
+            background-color: #eff4f8;
+        }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="category">
+        <button id="hair">Hair</button>
+        <button id="skin">Skin</button>
+        <button id="weight">Weight</button>
+        <button id="pcos">PCOS</button>
+        <button id="feminine">Feminine Care</button>
+    </div>
+  </body>
+</html>
+
+
+<script> 
+
+    document.querySelector("#hair").addEventListener("click", myfunction)
+    function myfunction(){
+        
+        window.location.href = "index.html"
+    }
+
+    document.querySelector("#skin").addEventListener("click", myfunction)
+    function myfunction(){
+        window.location.href = "skin.html"
+    }
+    document.querySelector("#weight").addEventListener("click", myfunction)
+    function myfunction(){
+        window.location.href = "weight.html"
+    }
+    document.querySelector("#pcos").addEventListener("click", myfunction)
+    function myfunction(){
+        window.location.href = "pcos.html"
+    }
+    document.querySelector("#feminine").addEventListener("click", myfunction)
+    function myfunction(){
+        window.location.href = "feminine.html"
+    }
+    
+
+</script>

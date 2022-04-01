@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #container{   
+         width: 70%;
+         margin-top: 30px;
+         margin: auto;
+     }
+
+     #container > div{
+        display: flex;
+        justify-content: space-between;
+         margin: auto;
+         margin-top: 20px;
+         margin-bottom: 30px;
+
+     }
+
+     #container div:nth-child(1){
+         font-size: 25px;
+         font-weight: 100;
+     }
+
+     #right div:nth-child(1){
+         font-size: large;
+         color: #8470a3;
+     }
+    
+     #right div:nth-child(2){ 
+         display: flex;
+         width: 400px;
+         border: 1px solid #66509a;
+         background-color: white;
+         border-radius: 10px;
+
+     }
+
+     #right > div > button{
+         text-align: center;
+         padding: 5px 15%;
+         color:#66509a;
+         font-size: 15px;
+         overflow: hidden;
+         border: none;
+         font-weight: 600;
+         border-radius: 10px;    
+         background-color: white;
+     }
+
+     #container > div  button:nth-child(1){
+         background-color: #66509a;
+         color: white;
+     }
+
+    select{
+        width: 200px;
+        padding: 10px;
+        border: 0.5px solid grey;
+        border-radius: 10px;
+        text-align: left;
+        color: grey;
+    }
+
+   #apply{
+       background-color: black;
+       color: white;
+   }
+   
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+      <div>Shop Hair Solutions</div>
+      <div><select name="hairtype" id="">
+        <option value="">Hair Type</option>
+        <option value="">Straight</option>
+        <option value="">Wavy</option>
+        <option value="">Curly</option>
+        <option value="">Coloured</option>
+        <option value="">Chemically treated</option>
+        <option value="" id="apply">Apply</option>
+        </select>
+
+      <select name="" id="">
+        <option value="">Hair Issues</option>
+        <option value="">Tangled Hair</option>
+        <option value="">Hair Fall & Thinning</option>
+        <option value="">Frizzy Hair</option>
+        <option value="">Hair breakage</option>
+        <option value="">Hair Dryness & Frizziness</option>
+        <option value="" id="apply">Apply</option>
+      </select>
+    </div>
+    </div>
+
+      <div id="right">
+      <div> 23 product</div>
+      <div>
+          <button id="all">All</button>
+          <button>Kit</button>
+          <button>Single</button>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>
