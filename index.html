@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+       src="https://kit.fontawesome.com/24c494a6b6.js"
+       crossorigin="anonymous"
+     ></script>
+     <title>Hair Regimens for Growth &amp; Care | Bodywise | Digital Health Clinic for Women</title>
+    <style>
+    
+       .navbar{
+           width: 100%;
+           height: 70px;
+           border: 1px solid black;
+           background-color: black;
+           display:flex;
+           justify-content:space-between;
+           color: white;
+           box-sizing: border-box;
+   
+          padding: 20px;
+          margin-top: -8px;
+        }
+       .navbar :nth-child(1){
+           width: 100px;
+           font-size: 25px;
+           cursor: pointer;
+       }
+       .navbar :nth-child(2){
+           width: 800px;
+           cursor: pointer;
+       }
+       .navbar :nth-child(3){
+           width: 300px;
+           cursor: pointer;
+       }
+       .navbar>div{
+       
+           width: 30%;
+           height: 100%;
+           display: flex;
+           justify-content:space-between;
+
+       }
+       #doctor>div{
+           width: 15%;
+           height: 100%;
+        
+          font-size: 18px;
+          text-align: left;
+         
+          display: flex;
+         
+       }
+       #doctor :nth-child(1){
+           width: 250px;
+       }
+       #doctor :nth-child(2){
+           width: 250px;
+       }
+       #doctor :nth-child(3){
+           width: 150px;
+           
+       }
+      #search>div{
+          width: 20%;
+        
+          font-size: 25px;
+          text-align: left;
+        }
+        h1{
+          padding-left: 100px;
+        }
+
+        .text>img{
+           width: 100%;
+           height: 45%;
+           border-radius: 20px;
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          
+          
+        }
+        .item{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+        width: 85%;
+        height: 560px;
+        overflow: hidden;
+        display:flex;
+        margin: auto;
+        gap: 20px;
+        border-radius: 15px;
+        margin-left: 100px;
+       
+        margin-top: 60px;
+        margin-bottom: 70px;
+       
+       }
+       .item>div>p{
+           font-size: 20px;
+           font-weight: 500;
+           margin-left: 10px;
+       }
+       .btn{
+           width: 90%;
+           background-color: #5e42ac;
+           font-size: 20px;
+           font-weight: bolder;
+           padding: 10px 50px 10px 50px;
+           margin-left: 10px;
+           border-bottom-left-radius: 15px;
+           border-bottom-right-radius: 15px;
+           border-top-left-radius: 0px;
+           border-top-right-radius: 0px;
+        }
+        .btn:hover{
+            background-color: rgb(127, 243, 127);
+            color: darkgreen;
+        }
+       span{
+           color: #5d3eb3;
+       }
+    
+      .doctorImage{
+          width: 85%;
+          height: 300px;
+          margin: auto;
+          margin-top: 40px;
+          display: flex;
+          text-align: left;
+      }
+      .doctorImage>div{
+          width: 100%;
+          height: 300px;
+      }
+      .doctorImage :nth-child(1){
+          width: 450px;
+      }
+      #image{
+        width: 100%;
+        height: 300px;
+      }
+      button{
+          border: 0ch;
+          background-color:black;
+          color: white;
+          padding: 20px 70px 20px 70px;
+          border-radius: 15px;
+          cursor: pointer;
+          font-size: 20px;
+      }
+   
+
+       #experts{
+           width: 85%;
+           height: 210px;
+           margin: auto;
+           margin-top: 50px;
+           display: flex;
+           gap: 20px;
+       }
+       #experts>div{
+           
+           width: 33%;
+           box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+           border-radius: 20px;
+           display: flex;
+           gap: 5px;
+          background-color:rgb(238, 247, 247);
+        }
+        #experts>div>div{
+            height: 200px;
+           width: 50%;
+            
+        }
+        #experts>div>div:nth-child(1){
+            width: 110px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 15px;
+            border-radius: 15px;
+            border: 2px solid rgb(21, 133, 68);
+        }
+        #experts>div>div:nth-child(2){
+           width: 250px;
+           border-radius: 15px;
+        }
+        #experts>div>div>p{
+            color: rgb(94, 90, 90);
+            font-size: 17px;
+            margin-top: -10px;
+        }
+        #experts>div>div>h2{
+            color: rgb(21, 133, 68);
+        }
+        #customer{
+            width: 85%;
+            height: 450px;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        #customer>div{
+            width: 33%;
+            height: 450px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            border-radius: 20px;
+            background-color: #e7dfff79;
+        }
+        #customer>div+:nth-child(2){
+            background-color:rgb(240, 255, 255);
+
+        }
+        #customer>div>div{
+            width: 90%;
+            height: 220px;
+            margin: auto;
+            margin-top: 15px;
+
+        }
+        #customer>div>div:nth-child(1){
+           
+            height: 80px;
+            border: rgb(238, 255, 3);
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+        }
+        #customer>div>div:nth-child(2){
+            height: 390px;
+        }
+        #customer>div>div>div{
+            width: 50%;
+            height:80px;
+
+        }
+        #customer>div>div>div:nth-child(1)
+        {
+            height: 80px;
+            width: 100px;
+            margin: 0px 10px 10px 10px;
+            border-radius: 15px;
+
+        }
+        #customer>div>div>div:nth-child(2)
+        {
+            height: 80px;
+            width: 210px;
+            
+            margin: 0px 10px 10px 10px;
+            border-radius: 15px;
+        }
+        img{
+            width: 80%;
+            height: 80px;
+        }
+        .para{
+            color: grey;
+            font-size: 20px;
+        }
+      #works{
+          width: 85%;
+          height: 300px;
+          margin: auto;
+          margin-top: 40px;
+          display: flex;
+          gap: 40px;
+
+      }
+      #works>div{
+          width: 100%;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+       }
+      #works>div>h1{
+        padding-left: 0px;
+        margin-top: -15px;
+      }
+     .delivery{
+        width: 85%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        gap: 25px;
+
+     }
+     .delivery>div{
+         width: 100%;
+         border-radius: 15px;
+     }
+     #inside{
+         width: 100%;
+         height: 100px;
+         display: flex;
+         border-radius: 15px;
+         background-color: rgb(212, 243, 255);
+       
+         
+     }
+     #inside>div{
+         width: 100%;
+         height: 100px;
+         
+    }
+    #inside>div:nth-child(1){
+            width: 230px;
+    }
+    #inside>div>img{
+        width: 50%;
+        height: 50px;
+       padding: 25px 40px 25px 25px;
+    }
+    #inside>div+div{
+        font-size: 20px;
+        padding-top: 30px;
+       
+    }
+    #inside>div>span{
+       font-weight: 1000;
+    }
+    #inside>div>p{
+        color:rgb(90, 83, 83);
+        margin-top: -2px;
+    }
+    
+    #inside1{
+         width: 100%;
+         height: 100px;
+         display: flex;
+         border-radius: 15px;
+         background-color:rgb(253, 214, 220)
+    }
+    #inside1>div{
+         width: 100%;
+         height: 100px;
+         
+    }
+    #inside1>div:nth-child(1){
+            width: 230px;
+    }
+    #inside1>div>img{
+        width: 50%;
+        height: 50px;
+       padding: 25px 40px 25px 25px;
+    }
+    #inside1>div+div{
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    #inside1>div>span{
+       font-weight: 1000;
+
+    }
+    #inside1>div>p{
+        color:rgb(90, 83, 83);
+        margin-top: -2px;
+    }
+    #payment{
+        width: 85%;
+        height: 80px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+    }
+    #payment>div{
+        width: 12.5%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+    #payment>div>img{
+        width: 80%;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    #bottom{
+        height: 600px;
+        background-color: black;
+        color: white;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+    }
+    #bottom>div{
+        width: 40%;
+        height: 130px;
+        margin: auto;
+        font-size: 20px;
+        cursor: pointer;
+    }
+ 
+    #upper{
+        width: 85%;
+        height: 500px;
+        margin: auto;
+        margin-top: 60px;
+        display: flex;
+        gap: 10px;
+    }
+    #upper>div{
+        width: 85%;
+        height: 450px;
+    }
+    #upper>div:nth-child(1){
+        width: 1100px;
+    }
+    #upper>div>div{
+        width: 100%;
+        height: 240px;
+        gap: 20px;
+    }
+    #upper>div>div:nth-child(2){
+        width: 85%;
+        height: 200px;
+        background-color: #379F8E;
+        border-radius: 20px;
+       padding-left:20px;
+       padding-top: 10px;
+        color: white;
+        display: flex;
+        
+    }
+    img{
+        margin-left: -3px;
+       margin-top: -5px;
+    }
+    #upper>div>div>div>img{
+        height: 210px ;
+        width: 230px;
+        border-radius: 20px;
+        margin-top: -10px;
+    }
+    #box2{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        grid-template-rows: auto;
+       
+    }
+    #upper>#box2>div:nth-child(1){
+        height: 100%;
+        border-radius: 20px;
+       
+    }
+    #upper>#box2>div:nth-child(3){
+        height: 100%;
+        border-radius: 20px;
+    }
+   
+    
+    
+
+
+  #mainitems{
+      height: 280px;
+      width: 85%;
+      margin: auto;
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+  }
+  #mainitems>div{
+      width: 24%;
+  }
+  #mainitems>div>img{
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="navbar" >
+        <div><img style=" height: 30px;width:90px" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png"/></div>
+        <div id="doctor" >
+            <div>Book Doctor Consultation</div>
+            <div id="wellness">Take Wellnes Assesment</div>
+            <div>Choose Concern <span style="color:white"><i class="fa-solid fa-angle-down"></i></span></div>
+            <div id="products">All Products</div>
+            <div id="Refer">Refer & Earn</div>
+        </div>
+        <div id="search" >
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-user"></i></div>
+            <div><i class="fa-brands fa-whatsapp"></i></div>
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+    </div>
+
+     <div id="upper">
+         <div>
+             <div> <p style="font-size: 90px;font-weight: bolder;margin-top: 10px;color: #111D3C;font-family: sans-serif;">Be Bodywise<p> 
+                 <p  style="font-size: 25px;margin-top: -60px;color: grey;">The wisdom to stop the experiments and get health & wellness solutions from experts</p>
+             </div>
+             <div>
+                 <div>
+                    <p>Being with your wellness journey with a <p>
+                        <h2 style="margin-top:20px"> Free Doctor Consult</h2>
+                        <button style="margin-top:20px">Book Now</button>
+                 </div>
+                 <div class="dcimage"><img src="https://thumbs.dreamstime.com/b/female-doctor-hand-holding-red-apple-concept-healthy-food-64667957.jpg" alt=""></div>
+                
+             </div>
+         </div>
+         <div id="box2">
+             <div><img style="width: 100%;height: 100%;border-radius: 20px;" src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1618391146/new%20home/image_24_3.png" alt=""></div>
+             <div style="display:none"></div>
+             <div><img style="width: 100%;height: 50%;border-radius: 20px;"  src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_180,c_limit/v1617890609/staging/New%20category%20page%20banner/hair_1.png" alt="">
+             <img style="width: 100%;height: 45%;border-radius: 20px;margin-top: 20px;" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_180,c_limit/v1617890609/staging/New%20category%20page%20banner/weight.png" alt="">
+            </div>
+           
+         </div>
+     </div>
+
+     <div id="mainitems">
+         <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1623302237/new%20home/Hair_Desktop_new.png" alt=""></div>
+         <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1639992700/new%20home/Skin_Blue_Desktop.png" alt=""></div>
+         <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1636470038/new%20home/Nutrition_Desktop_new.png" alt=""></div>
+         <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1634886012/new%20home/UPDATED_PCOS/PCOS_Desktop_N2.png" alt=""></div>
+         <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1623302237/new%20home/UTI_Desktop_new.png" alt=""></div>
+    </div>
+    <br><br><br><br><br>
+
+
+
+    <h1>Best Sellers</h1>
+    <div id="bestSeller" >
+        <div class="container-fluid" >
+            <div class="slider-wrap">
+                <div class="slider-main">
+                    <div class="item">
+                       <div class="text"> <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1640335849/staging/products/darkenyl-hair-serum/PRODUCT%20IMAGES/1DHS_1000x750.jpg" alt="">
+                        <h2 style="font-weight: 100;"> &nbsp;&nbsp;1% Rendensyl Hair Oil</h2>
+                        <h2 style="font-size: 35px;">&nbsp;Rs 549</h2>
+                        <p > <span>For</span> Hair growth, Reduced Hair Fall <br>
+                        <span>With </span>1% Rendensyl, Onion Oil<br> Bhringraj</p>
+                      
+                        <button class="btn">Add To Cart</button>
+                    </div>
+                       <div class="text"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1642602143/staging/products/chelate-water-softener/PRODUCT%20IMAGES/CWS_1000x750.png" alt="">
+                        <h2 style="font-weight: 100;">&nbsp;&nbsp;Chelate Water Softener</h2>
+                        <h2 style="font-size: 35px;">&nbsp;Rs 449</h2>
+                        <p><span>For</span> Softening Hard Water</p> 
+                        <p><span>With</span> Chelating Agent</p><br> 
+                        <button class="btn">Add To Cart</button>
+                    </div>
+                    <div class="text"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1620821626/staging/products/hair-health-gummies/Hair%20Gummies%2060%20Pack/hair_1600x1200.jpg" alt="">
+                        <h2 style="font-weight: 100;">&nbsp;&nbsp;Biotin Hair Gummies (60)</h2> 
+                        <h2 style="font-size: 35px;">&nbsp;Rs 899</h2>
+                        <p><span>For</span> Hair growth & strength</p>
+                        <p><span>For</span> Biotin 5000 MCG,<br>Multivitamins,Zinc</p>
+                         <button class="btn">Add To Cart</button>
+                    </div>
+                    <div class="text"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1613991979/staging/products/hair-health-gummies/Carousel%20NEW/Hair_white-BG.jpg" alt="">
+                        <h2 style="font-weight: 100;">&nbsp;&nbsp;Biotin Hair Gummies (30)</h2>
+                        <h2 style="font-size: 35px;">&nbsp;Rs 499</h2>
+                        <p><span>For</span> Hair growth & strength</p>
+                        <p><span>For</span> Biotin 5000 MCG,<br>Multivitamins,Zinc</p>
+                        <button class="btn"> Add To Cart</button>
+                    </div>
+                
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+      
+    </div>
+
+    <div class="doctorImage">
+        <div> <img id="image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1611455725/Bodywise/Random/Rectangle_94.png" alt=""> </div>
+        <div> <h1>Feeling Confused ?</h1> 
+         <p style="color: grey; font-size: 25px; ">Take the quick quiz co-created with our doctors to know your body better & get your personalised regime</p>
+        <button class="btn1">Take Wellnes Quiz</button>
+        </div>
+    </div>
+
+    <h2 style="margin-left: 100px; margin-top: 110px; color: #5637aa;">Active Ingredients</h2>
+    <h1 style="margin-bottom: -10px;margin-top: -12px;">SAFE & EFFECTIVE INGREDIENTS</h1>
+   
+    <p style="color: grey; font-size: 25px; margin-left: 100px;">We source clinically proven ingredients gathered in the most sustainable way.</p>
+    <p  style="color: grey; font-size: 25px; margin-left: 100px;margin-top: -20px;"> When we find better ways forward, we take them.</p>
+
+
+    <h1 style="margin-top:180px;" >How It Works</h1>
+    <div id="works">
+        <div>
+            <h1 style="color: rgb(103, 42, 160); font-size:100px;" >01</h1>
+            <h1 style="margin-top: -65px;">Health Assesment</h1>
+            <p style="color: grey;font-size: 18px; margin-top: -10px;">Let us get to know you by asking a few questions. We will lay out actionable steps for you to achieve your wellness goals.</p>
+        </div>
+        <div>
+            <h1 style="color: rgb(103, 42, 160); font-size:100px;"  >02</h1>
+            <h1 style="margin-top: -65px;">Online Doctor Consultation</h1>
+            <p style="color: grey;font-size: 18px; margin-top: -10px;">Get connected with a doctor to discuss your health concerns and understand the treatment options. Find products that are right for your needs.</p>
+        </div>
+        <div>
+            <h1 style="color: rgb(103, 42, 160); font-size:100px;" >03</h1>
+            <h1 style="margin-top: -65px;">Instant Product Delivery</h1>
+            <p style="color: grey;font-size: 20px; margin-top: -10px;">We know you’re busy. We will get your treatment shipped to your door in 3-5 days.</p>
+        </div>
+    </div>
+    <br><br><br>
+    <h1>Meet Our Experts</h1>
+    <div id="experts">
+        <div>
+            <div><img style="width: 100%;height:100px;border-radius: 15px;" src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1604583668/staging/Home/Images/Rectangle_56.jpg" alt=""></div>
+            <div>
+                <h2>Dr. Sharmatha Kumar</h2>
+                <p>Dr. Kumar is practicing dermatalogist with a decade of experience treating women.She especializes in aesthetic dermatalogy and hair restoration. She is a passionate advocate for safe and effctive skin & hair care. </p>
+            </div>
+        </div>
+        <div>
+            <div><img style="width: 100%;height:100px;border-radius: 15px;" src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1604583668/staging/Home/Images/Rectangle_56-1.jpg"alt=""></div>
+            <div>
+                <h2>Dr. Supriya Vatkar</h2>
+                <p>Dr. Vatkar is a dermatalogist and an esteemed fellow of several Indians and international institute. She specializes in cutting edge technologies focused on Indians skin. She is a strong advocate of cruelty free products.</p>
+            </div>
+        </div>
+        <div>
+            <div><img style="width: 100%;height:100px;border-radius: 15px;" src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1604583668/staging/Home/Images/Rectangle_56-2.jpg" alt=""></div>
+            <div>
+                <h2>Dr.Shobita Anand</h2>
+                <p>Dr. Anand is a practicing cosmetologist who deals with skin and hair conditions specifically focusing on conditions that affect women on younger age. Her interest in these cases is deep rooted in her personal experiences.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <h1 style="margin-top: 80px;">Our Customer Love Us</h1>
+    <p style="color: grey;font-size: 25px; margin-top: -15px;padding-left: 100px;" >Here are some stories from some of our ClubWise Members</p>
+    <div id="customer">
+        <div>
+            <div>
+                <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1606486889/new%20home/Hair-_gummies-_600X600.png" alt=""></div>
+                <div><p style="font-size: 20px;padding-top: 10px;">Hair Health Gummies</p> </div>
+            </div>
+            <div>
+                <h2>Best Product</h2>
+                <p class="para">"My hairefall was reduced massively in almost 2.5 months of consuming the gummies.That's when i knew it was working. I ordered my 3rd pack, I'm not even kidding. My nails grew faster than usuall as well..haha. It has aslo boosted new hair growth.. I can say I'm really happy with this product. Thank you:)"</p>
+                <br>
+                <h2>Tara Mehra, Age 24</h2>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1606537693/new%20home/hair_oil.png" alt=""></div>
+                <div><p style="font-size: 20px;padding-top: 10px;">Hair Nourish Oil</p></div>
+            </div>
+            <div>
+                <h2>I Highly Recommend</h2>
+                <p class="para">"This is a mind blowing hair oil. It's my first time using this hair oil and this deeply nourished my hair strands and makes it frizz free. In love with this hair oil and the fragrance of this is just amazing. It is chemical free as well!" </p>
+                <br><br><br>
+                <h2>Vibha Nikam, Age 32</h2>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1606538511/new%20home/1200x1600p1.png" alt=""></div>
+                <div><p style="font-size: 20px;padding-top: 10px;">Hair Growth Serum</p></div>
+            </div>
+            <div>
+                <h2>I Highly Recommend</h2>
+                 <p class="para">"Best one... been applying it for past one month and trust me guys beginning the hair started falling off but asked doctor and she said its normal and after sometime seeing the visible growth in new hair." </p>
+                 <br><br><br>
+                 <h2>Ankita Eswar, Age 23</h2>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <h1>Delivery Instructions</h1>
+    <div class="delivery" >
+        <div id="inside">
+            <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603435297/staging/Home/Images/cod-icn.png" alt=""></div>
+            <div>
+                <span> COD Available </span><br>
+                <p>Free delivery for all orders</p> 
+            </div>
+
+        </div>
+        <div id="inside1">
+            <div>
+                <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603435297/staging/Home/Images/coupon-icn.png" alt="">
+            </div>
+            <div>
+               <span> 20% Cashback</span> <br>
+                <p> When you place an order and pay online</p> 
+            </div>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 70px;">Complete your payment using any of these payment options</h1>
+    <div id="payment" >
+        <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1603435295/staging/Home/Images/amex-icn.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1603435295/staging/Home/Images/master-icn.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1603435295/staging/Home/Images/visa-icn.png" alt=""></div>
+        <div><img src=" https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1603435295/staging/Home/Images/bhim-icn.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1603435295/staging/Home/Images/gpay-icn.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1603435295/staging/Home/Images/netbanking-icn.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1603435295/staging/Home/Images/cash-icn.png" alt=""></div>
+    </div>
+
+
+    <div id="bottom" >
+      <h1 style="padding-top: 30px;padding-left: 10px;">Bodywise</h1>
+      <div>
+          Hair&nbsp;&nbsp;   &nbsp;&nbsp;  Skin  &nbsp;&nbsp;  &nbsp;&nbsp;   Nutrition <br> <br>  <br>
+          PCOS &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;Intimate Care &nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;  blog
+          <br>
+          <br>
+          <hr>
+        </div>
+       <br>
+      <div>
+          Contact Us&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FAQs
+          <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Return & Refunds
+          <br><br>
+          <hr>
+        </div>
+       <br>
+      <div>
+        <i class="fa-brands fa-instagram"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook-f"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-youtube"></i>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sitemap  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Join Community 
+    </div>
+    <p style="margin-top: -30px;">  Copyright © 2022 BeBodywise. All rights reserved</p>
+   </div>
+</body>
+</html>
+
+<script>
+    document.getElementById("wellness").addEventListener("click",myFunction);
+    function myFunction(){
+        window.location= "../index.html"
+    }
+</script>
+
+
+
+
+
+
+
+ 
