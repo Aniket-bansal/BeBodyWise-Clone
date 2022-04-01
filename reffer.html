@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ .div1 {
+        height : 380px;
+        width: 100%;
+        background-color: #8275D0;
+        display: flex; 
+    }
+    .box1 {
+        width: 25%;
+        height: 48%;
+        margin-left: 230px;
+        margin-top: 80px;
+        color: white;
+    }
+    #myBtn {
+      width: 100%;
+      height: 50px;
+      border-radius: 10px;
+      background-color: black; 
+      color: white;
+      cursor: pointer;   
+    }
+    .box2 {
+        width: 48%;
+        height: 100%;
+    }
+    .box1 > p {
+        font-size : 19px;
+        margin-top: -15px;
+    }
+
+
+.tab {
+  overflow: hidden;
+  width: 20%;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+ .div3 {
+        display: flex;
+        margin-left: 30px;
+        height: 240px;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        background-color: #FDEFF0;
+        border-radius: 10px;
+        justify-content: space-between ;
+    }
+
+    .box3 {
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .box3 > p {
+        font-size : 18px;
+        margin-top: -10px;
+    }
+    .box4 {
+        margin-right: 45px;
+        margin-top: 35px;
+        display: flex;
+        color : #E86669;
+    }
+    .box4 > p {
+        margin-top: 50px;
+        font-size: 27px;
+    }
+    .box4 > h1 {
+        font-size: 80px;   
+    }
+    .btn2{
+        margin-top: 25px;
+        height: 48px;
+        width: 55%;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .div4 {
+        height: 350px;
+        width: 50%;
+        margin-left: 130px;
+        margin-top: 15px;
+        border-radius: 15px;
+        background-color: #F8F8F8;
+        
+    }
+    .div4 > .how {
+        border: 1px solid red;
+        height: 80%;
+        width : 15%;
+        margin-left: 55px;
+        
+    }
+    .howit {
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .work {
+        display: flex;
+    }
+
+    .how>div {
+        height: 50px;
+        width: 50px;
+        background-color: #ECEBF4;
+        color: #8275D0;
+        margin-top: 15px;
+        margin-left: 50px;
+        border-radius: 10px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    .refer > h3 {
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    .refer > p {
+        margin-left: 25px;
+        margin-top: -15px;
+        color: #6D7486;
+        
+    }
+    .terms {
+        height: 380px;
+        width: 260px;
+        margin-left: 130px;
+        border-radius: 15px;
+        background-color: #F8F8F8;
+       
+    }
+    .terms >.t1 {
+        height: 100px;
+        width: 60%;
+        margin: auto;
+        padding: 10px;
+        
+    }
+    .terms >.t2 {
+        height: 230px;
+        width: 70%;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .your {
+            height: 100%;
+            width: 90%;
+            text-align: center;
+            margin: auto;
+    }
+    .progress{
+            height: 100px;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(21,1fr);
+            grid-template-rows: repeat(1,1fr);
+            gap: 0px;    
+           
+    }
+    .progress > div {
+        height: 62px;
+        width: 92%;
+        border-radius: 25px;
+        background-color: #F2F1FA;
+        text-align: center;
+        font-size: 50px;
+        padding: 4px 4px 0px 4px;
+        gap: 2px;
+        color: #8275D0;
+    }
+    .progress :nth-child(even){
+        height: 10px;
+        width: 25px;
+        margin: auto;
+        
+    }
+    .progress :nth-child(odd){
+        margin: auto;
+        
+    }
+    .progress :nth-child(1){
+        background-color: #3B2578;
+        color: white;
+    }
+    .progress :nth-child(5){
+       
+        color: white;
+    }
+    .pbox {
+        height: 200px;
+        width:100%;
+        margin: auto;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(1, auto);
+    }
+  
+   .pbox > div {
+       height: 150px;
+       width: 70%;
+       margin-left: 15px;
+       border-radius: 10px;
+   }
+   
+   .b1 {
+       background-color: #95B77B;
+      
+       
+   }
+   .b2 {
+       background-color: #F2F1FA;
+   }
+   .b1 >div >h4{
+       margin-top: 15px;
+       margin-left: 15px;
+       color: #FFEC6B;
+   }
+   .b1 > div > p {
+       margin-top: -15px;
+       margin-left: 15px;
+       color: white;
+       font-size: 20px; 
+   }
+   .b2 > div >p {
+       margin-top: 30px;
+       margin-left: 15px;
+       color: #8275D0;
+   }
+
+   .b2 > div > h4 {
+       margin-top: -15px;
+       margin-left: 15px;
+       font-size: 17px;
+       color: #3B2578;
+   }
+   .lock {
+       margin-left: 150px;
+       margin-top: 15px;
+       color: #CCC7DF;
+       
+   }
+   .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height : 450px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share {
+     width : 30%;
+     text-align : center;
+     margin : auto;
+     height:20px; 
+     color: black; 
+}
+.hr {
+margin-top : 100px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.social {
+margin-top : 65px;
+margin-left : 65px;
+}
+  
+</style>
+</head>
+<body>
+ <div class ="div1">
+        <div class ="box1">
+            <h1 style="font-family:verdana">Refer & Earn ₹100</h1>
+            <p>Hey, we know it feels great to be healthy.<br> Pass it on and we’ll give you ₹100 in return</p>
+            <button id ="myBtn"><h3>Invite Now</h3></button>
+            <div id="myModal" class="modal">
+  
+                <!-- Modal content -->
+               
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                 <div class ="share">
+                 <h2>Share</h2>
+                 <h4>Bodywise</h4></div>
+                 <hr class = "hr">
+                 <div class = "social">
+                  <a href="#" class="fa fa-facebook"></a>
+                 <a href="#" class="fa fa-twitter"></a>
+                 <a href="#" class="fa fa-google"></a>
+                 <a href="#" class="fa fa-linkedin"></a>
+                 <a href="#" class="fa fa-youtube"></a>
+                 <a href="#" class="fa fa-instagram"></a>
+                 </div>
+                </div>
+              
+              </div>
+        </div>
+        <div class ="box2">
+            <image src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1625554051/New%20refer%20and%20earn/BW/Banner_Desktop.png">
+                
+        </div>
+    </div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'refer')"id="defaultOpen">Refer & Earn</button>
+  <button class="tablinks" onclick="openCity(event, 'your')">Your Progress</button>
+</div>
+
+<div id="refer" class="tabcontent">
+ <div class = "div3">
+        <div class = "box3">
+            <h1 style="font-family:verdana;">Your Earnings</h1>
+            <p>You're yet to tell your friends about your health & wellness secret!</p>
+            <button class = "btn2">Refer Now</button>
+        </div>
+        <div class = "box4">
+            <P>₹</P>
+            <h1>0</h1>
+        </div>
+    </div>
+    <div class = "div4">
+        <h1 class ="howit">How it works</h1>
+        <div class ="work">
+      <div class = "how">
+          
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+      </div>
+      <div class = refer>
+          <h3>Refer Your Friends</h3>
+          <p>We have made it super easy to share, your phone number is your referral code</p>
+          <h3>They Begin Their Wellness Journey</h3>
+          <p>Your friends gets ₹100 in their BW Wallet on using the code</p>
+          <h3>You Get Rewarded</h3>
+          <p>You earn ₹100 in your BW Wallet once they place an order with Bodywise</p>
+      </div>
+      </div>
+    </div>
+    <div class = "terms">
+        <div class ="t1">
+            <h1>Terms & Conditions</h1>
+        </div>
+        <div class ="t2">
+            <p>1. You can refer as many friends you like</p>
+            <p>2. You get your reward only when your friend places an order</p>
+            <p>3. Use your reward money for a discount when you place an order and pay online</p>
+        </div>
+    </div>
+</div>
+
+<div id="your" class="tabcontent">
+   <div class = "your">
+       <h1>Your Progress</h1>
+    </div>
+    <div class = "progress">
+        
+        <div>0</div>
+        <div></div>
+        <div>1</div>
+        <div></div>
+        <div><div class ="cup"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
+          </svg></div></div>
+        <div></div>
+        <div>3</div>
+        <div></div>
+        <div>4</div>
+        <div></div>
+        <div><div class ="cup"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
+          </svg></div></div>
+        <div></div>
+        <div>6</div>
+        <div></div>
+        <div><div class ="cup"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
+          </svg></div></div>
+        <div></div>
+        <div>8</div>
+        <div></div>
+        <div>9</div>
+        <div></div>
+        <div><div class ="cup"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
+          </svg></div></div>
+    </div>
+    <div class = "pbox">
+        <div class = "b1">
+                <div><h4>Start Referring</h4></div>
+                <div><p>Refer now to<br> gain extra<br> rewards</p></div>
+        </div>
+        <div  class = "b2">
+            <div class="lock"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+              </svg></div>
+            <div><p>Refer 2 friends</p></div>
+            <div><h4>50 extra reward<br>for you</h4></div>
+        </div>
+        <div class="b2">
+            <div class="lock"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+              </svg></div>
+            <div><p>Refer 5 friends</p></div>
+            <div><h4>150 extra reward<br>for you</h4></div>
+        </div>
+        <div  class = "b2">
+            <div class="lock"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+              </svg></div>
+            <div><p>Refer 7 friends</p></div>
+            <div><h4>250 extra reward<br>for you</h4></div>
+        </div>
+        <div  class = "b2">
+            <div class="lock"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+              </svg></div>
+            <div><p>Refer 10 friends</p></div>
+            <div><h4>500 extra reward<br>for you</h4></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+document.getElementById("defaultOpen").click();
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+   
+</body>
+</html> 
