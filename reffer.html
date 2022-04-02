@@ -2,7 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refer & Earn</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+       src="https://kit.fontawesome.com/24c494a6b6.js"
+       crossorigin="anonymous"
+     ></script>
 <style>
  .div1 {
         height : 380px;
@@ -389,10 +394,77 @@ margin-top : 100px;
 margin-top : 65px;
 margin-left : 65px;
 }
-  
+#navbar{
+
+width: 100%;
+height: 80px; 
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+background-color: black;
+display:flex;
+color: white;
+
+}
+#navbar>div>img{
+height: 40px;
+width: 100px;
+margin-top: 16px;
+}
+#navbar>#Navmenu{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+width: 60%;
+height: 100%;
+/* border: 1px solid red; */
+margin-left: 50px;
+justify-content: space-evenly;
+}
+#navbar>#Navmenu>div{
+margin-top: 25px
+}
+#navbar>#NavIcons{
+ width: 30%;
+ height: 100%;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ 
+}
+#navbar>#NavIcons>span{
+margin-top: 25px;
+height: 25px;
+width: 25px;
+
+}
+
 </style>
 </head>
 <body>
+<!-- navbar -->
+<div id="navbar">
+  <div><img id="homepage" style="cursor:pointer" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt=""/></div>
+   <div id="Navmenu">
+     <div id="homepage" style="cursor:pointer">Book Doctor Consultation</div>
+     <div id="wellness" style="cursor:pointer">Take Wellness Assessment</div>
+     <div id="homepage" style="cursor:pointer">Choose Concern<span><i class="fa-solid fa-angle-down"></i></span></div>
+     <div id="products" style="cursor:pointer">All Products</div>
+     <div style="cursor:pointer">Refer & Earn</div>
+    
+      <!-- <div class="Navicons">
+  
+  -->
+ </div>
+
+ <div id="NavIcons">
+  <span style="cursor:pointer"><i class="fa-solid fa-magnifying-glass"></i></span>
+  <span style="cursor:pointer"><i class="fa-solid fa-user"></i></span>
+  <span style="cursor:pointer"><i class="fa-brands fa-whatsapp"></i></span>
+  <span style="cursor:pointer"><i class="fa-solid fa-bag-shopping"></i></span>
+ </div>
+
+
+ </div>
  <div class ="div1">
         <div class ="box1">
             <h1 style="font-family:verdana">Refer & Earn ₹100</h1>
@@ -592,6 +664,18 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+document.getElementById("homepage").addEventListener("click",homePage);
+function homePage() {
+  window.location="index.html"
+}
+document.getElementById("wellness").addEventListener("click",wellnessPage);
+function wellnessPage() {
+  window.location="Take wellness Awareness/wellnessAwareness.html"
+}
+document.getElementById("products").addEventListener("click",producPage);
+function producPage() {
+  window.location="All Products/hair.html"
 }
 </script>
    

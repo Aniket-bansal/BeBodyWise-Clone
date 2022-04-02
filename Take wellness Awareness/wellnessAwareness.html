@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Take Wellness Assessment</title>
     <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
@@ -17,13 +17,13 @@
 </head>
 <body>
     <div id="navbar">
-    <div><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt=""/></div>
+    <div><img id="homepage" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt=""/></div>
      <div id="Navmenu">
-       <div>Book Doctor Consultation</div>
-       <div>Take Wellness Assessment</div>
-       <div>Choose Concern<span><i class="fa-solid fa-angle-down"></i></span></div>
-       <div>All Products</div>
-       <div>Refer & Earn</div>
+       <div style="cursor:pointer">Book Doctor Consultation</div>
+       <div style="cursor:pointer">Take Wellness Assessment</div>
+       <div style="cursor:pointer">Choose Concern<span><i class="fa-solid fa-angle-down"></i></span></div>
+       <div id="all"style="cursor:pointer">All Products</div>
+       <div  id="refer"style="cursor:pointer">Refer & Earn</div>
       
         <!-- <div class="Navicons">
     
@@ -31,10 +31,11 @@
    </div>
 
    <div id="NavIcons">
-    <span><i class="fa-solid fa-magnifying-glass"></i></span>
-    <span><i class="fa-solid fa-user"></i></span>
-    <span><i class="fa-brands fa-whatsapp"></i></span>
-    <span><i class="fa-solid fa-bag-shopping"></i></span>
+    <span style="cursor:pointer"><i class="fa-solid fa-magnifying-glass"></i></span>
+    <!-- <span><i class="fa-solid fa-user"></i></span>
+     -->
+    <span style="cursor:pointer"><i class="fa-brands fa-whatsapp"></i></span>
+    <span style="cursor:pointer"><i class="fa-solid fa-bag-shopping"></i></span>
    </div>
   
  
@@ -42,7 +43,7 @@
    
    <div class="main">
      <!-- Add home page link -->
-    <div id="backHome"><span><a href=""><i class="fa-solid fa-xmark"></i></a></span></div>
+    <div id="backHome"><span><a href="../index.html"><i class="fa-solid fa-xmark"></i></a></span></div>
      <div id="consultQuestion">Let the game begin! What troubles you the most?</div>
     
    <div id="Problems">
@@ -96,5 +97,17 @@
 <script>
    function changeNext(){
      window.location="basicDetail.html"
+   }
+   document.getElementById("all").addEventListener("click",allProducts);
+   function allProducts(){
+     window.location = "../All Products/hair.html"
+   }
+   document.getElementById("refer").addEventListener("click",refferFun);
+   function refferFun(){
+     window.location = "../reffer.html"
+   }
+   document.getElementById("homepage").addEventListener("click",homeFun);
+   function homeFun(){
+     window.location = "../index.html"
    }
 </script>

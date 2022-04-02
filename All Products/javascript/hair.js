@@ -256,7 +256,7 @@
 
         var btn = document.createElement("button")
         btn.innerText = "Add to Cart"
-        
+        btn.style.cursor="pointer";
     
         box.append(img,name,price, use, details, btn)
     
@@ -291,3 +291,15 @@
         window.location.href = "feminine.html"
     }
     
+    document.getElementById("homepage").addEventListener("click",homePage);
+function homePage() {
+  window.location="../index.html"
+}
+document.getElementById("wellness").addEventListener("click",wellnessPage);
+function wellnessPage() {
+  window.location="../Take wellness Awareness/wellnessAwareness.html"
+}
+document.getElementById("refer").addEventListener("click",refferFun);
+   function refferFun(){
+     window.location = "../reffer.html"
+   }

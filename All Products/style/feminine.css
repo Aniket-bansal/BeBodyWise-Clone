@@ -181,10 +181,12 @@ select{
        font-size: 20px;
        position:absolute;
        bottom: 0%;  
-      
-       
-   }
-
+       border: none;
+    }
+    #allproducts > div > button:hover{
+     background-color: rgb(127, 243, 127);
+     color: darkgreen;
+    }
 
    #allproducts > div > p:nth-child(2){
     font-size: 20px;

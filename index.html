@@ -607,7 +607,7 @@ input {
         <div id="search" >
             <div><i class="fa-solid fa-magnifying-glass"></i></div>
             <div id="button"><i class="fa-solid fa-user"></i></div>
-            <div><i class="fa-brands fa-whatsapp"></i></div>
+            <div><i id="whatsapp" class="fa-brands fa-whatsapp"></i></div>
             <div id="button1"><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
     </div>
@@ -931,6 +931,10 @@ document.getElementById('button1').addEventListener("click", function() {
 document.querySelector('.closed').addEventListener("click", function() {
 	document.querySelector('.Bg-Modal').style.display = "none";
 });
+document.getElementById("whatsapp").addEventListener("click", whatsApp)
+function whatsApp(){
+    window.location = "https://api.whatsapp.com/send/?phone=917710096671&text=Hey%21+I+would+like+to+know+more+about+Bodywise.&app_absent=0"
+}
 </script>
 
 

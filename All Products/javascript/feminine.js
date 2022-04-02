@@ -90,6 +90,7 @@ productData.map(function(elem)
 
   var btn = document.createElement("button")
   btn.innerText = "Add to Cart"
+  btn.style.cursor="pointer";
   
 
   box.append(img,name,price, use, details, btn)
