@@ -16,5 +16,5 @@ Live project link::-->  https://nordstormrack-clone.netlify.app/
 <li>Shivam Srivastav</li>
 <li>Sandeep Gond</li>
 </ul>
-![Master](https://user-images.githubusercontent.com/77097101/192331075-e5d7101d-b4e2-4cd7-93ae-b9e1ec55668e.png)
-
+<h1>Some Screen Shots:</h1>
+<img src="https://raw.githubusercontent.com/Aniket-bansal/BeBodyWise-Clone/main/Screenshot_20220926_215757.png" />
